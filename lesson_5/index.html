@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #chess{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+      }
+      .black{
+        background-color: black;
+        color: white;
+        height: 40px;
+        width: 40px;
+      }
+      .white{
+        background-color: white;
+        color: black;
+        height: 40px;
+        width: 40px;
+      }
+      .nums{
+        background-color: brown;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        padding-top:10px;
+      }
+      .row{
+        display: flex;
+        flex-direction: row;
+        background-color: orange;
+        height: 40px;
+        width: 400px;
+      }
+
+      #basket{
+        background-color: green;
+        height: 40px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="btn" onclick="chessFn()">Нажми</div>
+    <div id="chess"></div>
+    <div id="basket"></div>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
