@@ -4,52 +4,38 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-      #chess{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-      }
-      .black{
-        background-color: black;
-        color: white;
-        height: 40px;
-        width: 40px;
-      }
-      .white{
-        background-color: white;
-        color: black;
-        height: 40px;
-        width: 40px;
-      }
-      .nums{
-        background-color: brown;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        padding-top:10px;
-      }
-      .row{
-        display: flex;
-        flex-direction: row;
-        background-color: orange;
-        height: 40px;
-        width: 400px;
-      }
-
-      #basket{
-        background-color: green;
-        height: 40px;
-        width: 400px;
-      }
+    #square{
+      width: 900px;
+      height: 900px;
+      background-color: orange;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .xo{
+      background-color: gray;
+      width: 298px;
+      height: 298px;
+      border: 1px double white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 3rem;
+    }
     </style>
   </head>
   <body>
-    <div id="btn" onclick="chessFn()">Нажми</div>
-    <div id="chess"></div>
-    <div id="basket"></div>
+    <div id="square">
+      <div id='1' class="xo"></div>
+      <div id='2' class="xo"></div>
+      <div id='3' class="xo"></div>
+      <div id='4' class="xo"></div>
+      <div id='5' class="xo"></div>
+      <div id='6' class="xo"></div>
+      <div id='7' class="xo"></div>
+      <div id='8' class="xo"></div>
+      <div id='9' class="xo"></div>
+    </div>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
